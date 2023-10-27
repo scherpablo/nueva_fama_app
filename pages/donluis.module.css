@@ -1,0 +1,27 @@
+.containerLayout {
+  
+  .h2 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 800;
+    padding-top: 20px;
+    margin-left: 60px;
+  }
+  .p {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 60px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+    .containerLayout {
+      display: flex;
+
+      .h2 {
+        margin-top: -50px;
+      }
+    }
+}

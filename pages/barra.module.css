@@ -1,0 +1,18 @@
+.container {
+    margin-top: -28px;
+
+    .divPasos {
+        max-width: 1100px;
+        position: relative;
+        left: 355px;
+        top: 78px;
+    }
+
+    .h2 {
+        color: blue;
+        position: relative;
+        left: 370px;
+        top: 78px;
+    }
+}
+

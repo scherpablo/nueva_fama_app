@@ -1,0 +1,41 @@
+.divPasos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    width: 1100px !important;
+
+    .botonPasos {
+        background-color: var(--white);
+        color: var(--black);
+        border: none;
+        font-size: 18px;
+        font-weight: 800;
+        cursor: pointer;
+    }
+}
+.containerBarra {
+    background-color: var(--stone200);
+    border-radius: 10px;
+    position: relative;
+    left: 10px;
+
+    .barra {
+        background-color: var(--amber400);
+        line-height: 1;
+        border-radius: 10px;
+        border: none;
+        font-size: 10px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .divPasos {
+        width: 100% !important;
+    }
+}
+@media (max-width: 768px) {
+    .divPasos, .containerBarra {
+        visibility: hidden;
+    }
+}

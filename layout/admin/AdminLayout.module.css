@@ -1,0 +1,22 @@
+.divAside {
+    display: flex;
+    gap: 50px;
+
+    .logo {
+        margin-top: 12px;
+        margin-left: 125px;
+    }
+}
+
+@media (max-width: 480px) {
+    .divAside {
+        display: flex;
+        flex-direction: column;
+        padding-right: 60px;
+
+        .logo {
+            position: relative;
+            left: 90px;
+        }
+    }
+}

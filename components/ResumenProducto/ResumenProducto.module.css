@@ -1,0 +1,88 @@
+.divProducto {
+  border: 1px solid var(--neutral400);
+  padding: 10px;
+  width: 240px;
+
+  .divImagen {
+    .imagen {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .descripcion {
+    margin-top: -10px;
+
+    .h3 {
+      font-size: 15px;
+      font-weight: bold;
+      max-width: 200px;
+      text-wrap: balance;
+    }
+    .pCantidad {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--blue400);
+      margin-top: -8px;
+    }
+    .precioProducto {
+      font-size: 14px;
+      font-weight: 700;
+      margin-top: -10px;
+    }
+    .subtotalProducto {
+      background-color: var(--amber400);
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+      display: flex;
+      margin-top: -4px;
+      color: var(--black);
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+
+  .divEditDelete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+    .botonProducto {
+      width: 40%;
+      padding: 5px;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 5px;
+    }
+    .btnEditar {
+      background-color: var(--blue600);
+    }
+    .btnEliminar {
+      background-color: var(--red600);
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+}
+
+@media (max-width: 1140px) {
+  .divProducto {
+    width: auto;
+  }
+  .imagen {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .imagen {
+    width: 100%;
+    height: auto;
+  }
+}

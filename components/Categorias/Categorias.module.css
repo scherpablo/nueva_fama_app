@@ -1,0 +1,26 @@
+.containerCat {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid var(--neutral400);
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+
+  &.bgAmbar {
+    background: var(--amber400);
+  }
+
+  .btnCat {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: none;
+    background: none;
+    border: none;
+  }
+}
+.containerCat:hover {
+  background-color: var(--stone200);
+}

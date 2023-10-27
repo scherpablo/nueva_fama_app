@@ -1,0 +1,135 @@
+.containerModal {
+  display: flex;
+
+  .divDescripcion {
+    padding: 0px 30px;
+    /* max-width: 350px; */
+
+    .divBoton {
+      display: flex;
+      justify-content: flex-end;
+
+      .botonCerrar {
+        background-color: var(--white);
+        border: none;
+      }
+    }
+
+    .h1 {
+      color: var(--black);
+      font-size: 26px;
+      font-weight: 800;
+      margin-top: 0px;
+      margin-bottom: -20;
+      text-wrap: balance;
+    }
+    .p {
+      font-size: 40px;
+      font-weight: 800;
+      color: var(--amber400);
+      margin-bottom: 10px;
+    }
+
+    .divCantidades {
+      display: flex;
+      gap: 20px;
+
+      .botonMenos,
+      .botonMas {
+        background-color: var(--white);
+        border: none;
+      }
+      .pCantidad {
+        color: var(--black);
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .botonPedido {
+    padding: 10px;
+    background-color: var(--black);
+    border: none;
+    color: var(--white);
+    font-weight: 700;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+
+    .botonPedido&:hover {
+      cursor: pointer;
+      background-color: var(--amber400);
+      color: var(--black);
+      transition: background-color 0.5s ease;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .containerModal {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    .divImagen {
+      height: 200px;
+      opacity: 50%;
+    }
+    .divDescripcion {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: -50px;
+      left: 50px;
+
+      .divBoton {
+        .botonCerrar {
+          position: relative;
+          top: -90px;
+          left: 120px;
+          border-radius: 50%;
+          background-color: transparent;
+        }
+      }
+
+      .h1 {
+        color: var(--white);
+        color: var(--amber400);
+        color: var(--blue600);
+        color: var(--black);
+        font-size: 24px;
+        text-align: center;
+        margin-top: -80px;
+        padding: 5px;
+      }
+      .p {
+        font-size: 40px;
+        margin-top: 0px;
+        color: var(--blue600);
+        padding: 5px;
+      }
+
+      .divCantidades {
+        .botonMenos, .botonMas {
+          background-color: transparent;
+          border-radius: 50%;
+          height: 35px;
+          position: relative;
+          top: 15px
+        }
+      }
+
+      .botonPedido {
+        width: 150px;
+      }
+    }
+  }
+}
+
